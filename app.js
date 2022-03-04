@@ -20,4 +20,6 @@ const displayTeparature = (temparature) => {
     console.log(temparature);
     // set weather icon
     const url = `https://openweathermap.org/img/wn/${temparature.weather[0].icon}@2x.png`;
+    const imgIcon = document.getElementById('weather-icon');
+    imgIcon.setAttribute('src', url);
 }
